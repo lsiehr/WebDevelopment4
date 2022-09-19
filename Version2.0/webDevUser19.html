@@ -1,83 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Version 2.0
+  <!--Version 2.0
         Name: Jacob Radke
         Date Completed: 9/16/2022
     -->
 
-<head>
-
-    <title>User ## Version 2.0 </title>
+  <head>
+    <title>User ## Version 2.0</title>
 
     <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="SHS WebDev Tags and DIV's">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="SHS WebDev Tags and DIV's" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <style>
+      #banner {
+        border: 5px outset red;
+        background-color: lightblue;
+        text-align: center;
+      }
+      div#face {
+        width: 40vw;
+        height: 40vw;
+        max-width: 400px;
+        max-height: 400px;
+        margin: 0 auto;
+        position: relative;
+        background: rgb(48, 130, 23);
+        margin-top: 2rem;
+      }
 
+      div#face,
+      div#face * {
+        border-radius: 50%;
+      }
+
+      .eye {
+        width: 25%;
+        height: 25%;
+        background: rgb(255, 0, 0);
+        position: absolute;
+        top: 20%;
+      }
+
+      .left.eye {
+        left: 20%;
+      }
+
+      .right.eye {
+        right: 20%;
+      }
+
+      .pupil {
+        background: #000;
+        width: 50%;
+        height: 50%;
+        position: relative;
+        left: 25%;
+        transform-origin: bottom;
+      }
+
+      #mouth {
+        position: relative;
+        width: 60%;
+        left: 20%;
+        height: 25%;
+        border: 1vw solid transparent;
+        border-radius: 50%;
+        top: 50%;
+        border-bottom-color: #000;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <main class="wideMargin">
-
-        <!-- Your 1st Heading-->
-        <h1>About Me</h1>
-        <div id="tags">
-            <p>
-                This is my first webpage! I was able to code all the HTML and CSS in order to make it.
-                Watch out world of web design here I come!
-            </p>
-
-            <h2>Heading Examples</h2>
-
-            <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-              <h1>This is the biggest heading</h1>
-              <h2>This is the second biggest heading</h2>
-              <h3>This is third biggest heading</h3>
-              <h4>This is the third smallest heading</h4>
-              <h5>This is the second smallest heading</h5>
-              <h6>This is the smallest heading</h6>
-            <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
-
-            <h2>Examples of "Other" HTML elements</h2>
-
-            <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-            <del>Pineapple belongs on pizza</del> 
-            <ins>Thats wrong.</ins>
-            <br>
-            <sub>This is called a subscript</sub> <sup>and this is a superscript</sup>
-            <br>
-            <small>This is small text</small> 
-            <br>
-            <progress value="66" max="100"></progress>
-            <br>
-            <hr>
-            <br>
-            <abbr title="Hypertext Markup Language">HTML</abbr>
-
-            <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
-        </div>
-        <div id="banner">
-        </div>
-        <div id="face">
-
-        </div>
-    </main>
-
-
-    <footer>
-
+      <!-- Your 1st Heading-->
+      <h1>About Me</h1>
+      <div id="tags">
         <p>
-            <center> Webpage made by <a href="#" target="_blank">[your name]</a></center>
+          This is my first webpage! I was able to code all the HTML and CSS in
+          order to make it. Watch out world of web design here I come!
         </p>
 
-    </footer>
-</body>
+        <h2>Heading Examples</h2>
 
+        <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
+        <h1>This is the biggest heading</h1>
+        <h2>This is the second biggest heading</h2>
+        <h3>This is third biggest heading</h3>
+        <h4>This is the third smallest heading</h4>
+        <h5>This is the second smallest heading</h5>
+        <h6>This is the smallest heading</h6>
+        <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
+
+        <h2>Examples of "Other" HTML elements</h2>
+
+        <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
+        <del>Pineapple belongs on pizza</del>
+        <ins>Thats wrong.</ins>
+        <br />
+        <sub>This is called a subscript</sub>
+        <sup>and this is a superscript</sup>
+        <br />
+        <small>This is small text</small>
+        <br />
+        <progress value="66" max="100"></progress>
+        <br />
+        <hr />
+        <br />
+        <abbr title="Hypertext Markup Language">HTML</abbr>
+
+        <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
+        <section>
+          <p>Random text, because the random text generator didn't work.</p>
+        </section>
+      </div>
+      <div id="banner">
+        <h2>Hello World!</h2>
+      </div>
+      <div id="face">
+        <div class="left eye">
+          <div class="pupil"></div>
+        </div>
+        <div class="right eye">
+          <div class="pupil"></div>
+        </div>
+        <div id="mouth"></div>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        <center>
+          Webpage made by <a href="#" target="_blank">[your name]</a>
+        </center>
+      </p>
+    </footer>
+  </body>
 </html>
